@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-
 class Clicker extends Component{
   constructor(props){
     super(props);
@@ -15,31 +14,34 @@ class Clicker extends Component{
 
   handleMinusAmount =() =>{
     const {amountClicked, minusData, addData} = this.state;
+
     if(amountClicked >= minusData){
+      const currentAmount = amountClicked - minusData;
+
       this.setState({
-        amountClicked: amountClicked - minusData,
+        amountClicked: currentAmount,
         addData: addData + 1,
         minusData: minusData + 10,
-      }, this.autoAdd);
+      });
+
+      this.autoAdd();
     }
     
   }
 
   autoAdd =() =>{
-    const amountData = setInterval(this.pleaseAdd, 3000);
-
-    this.setState({
-      amountClicked: amountData,
-    });
+    setInterval(this.pleaseAdd, 3000);
   }
 
   pleaseAdd =() =>{
     const {amountClicked, addData} = this.state;
-    this.setState({
-      amountClicked: amountClicked + addData,
-    })
-  }
+    const addThem = amountClicked + addData;
 
+    this.setState({
+      amountClicked: addThem,
+    })
+
+  }
 
   handleCircleClicked = () =>{
     this.setState({
@@ -47,22 +49,25 @@ class Clicker extends Component{
     });
   }
 
-
   render(){
     
-
     return(
       <div>
-        <button onClick={this.handleCircleClicked}>Click me!</button> 
 
         <div>
-          <p>
-            Total: {this.state.amountClicked}
-          </p>
+          <button onClick={this.handleCircleClicked}>Click me!</button> 
+        </div>
+
+        <p>
+          Total: {this.state.amountClicked}
+        </p>
+       
+        <div>
           <button onClick={this.handleMinusAmount}> -{(this.state.minusData.toString())} for {(this.state.addData + 1).toString()}</button>
         </div>
       </div>
     );
+
   }
 }
 
