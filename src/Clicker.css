@@ -1,0 +1,74 @@
+.container{
+  display: inline-flex;
+
+  width: 100vw;
+  height: 500px;
+
+  background-color: RED;
+}
+
+.clickerContainer{
+  display: inline-block;
+
+  width: 35%;
+  height: 100%;
+
+  background-color: BLUE;
+
+  padding: 20px;
+}
+
+.autoContainer{
+  display: inline-block;
+
+  width: 65%;
+  height: 100%;
+
+  background-color: GREEN;
+
+  padding: 20px;
+
+  text-align: left;
+}
+
+.amountContainer{
+  font-size: 20px;
+
+  padding-bottom: 50px;
+}
+
+.amountContainer > .active{
+  font-size: 25px;
+}
+
+.clicker{
+  width: 270px;
+  height: 270px;
+
+  margin-top: 24px;
+
+  border-radius: 100%;
+
+  transition-timing-function: ease-out;
+  transition: height .1s, width .1s;
+  -webkit-transition: height .1s, width .1s;
+}
+
+.clicker.active{
+  margin-top: 0;
+
+  width: 319px;
+  height: 319px;
+
+  transition-timing-function: ease-in;
+  transition: height .1s, width .1s;
+  -webkit-transition: height .1s, width .1s;
+}
+
+.autoAdd{
+  width: 200px;
+  height: 100px;
+
+  border-radius: .5rem;
+}
+
