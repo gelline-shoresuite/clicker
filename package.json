@@ -22,5 +22,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://gelline-shoresuite.github.io/clicker/"
+  "homepage": "https://gelline-shoresuite.github.io/clicker/",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

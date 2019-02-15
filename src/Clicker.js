@@ -7,7 +7,7 @@ class Clicker extends Component{
     super(props);
 
     this.state ={
-      amountClicked: 100000000,
+      amountClicked: 0,
 
       minusData: 10,
       addData: 0,
@@ -24,7 +24,6 @@ class Clicker extends Component{
     };
 
   }
-  
 
 
   handleAutoAmount =() =>{
@@ -140,7 +139,8 @@ class Clicker extends Component{
             <span className={(this.state.clickerClicked? 'active' : ' ')}>{this.state.amountClicked}</span>
           </div>
 
-          <button className={'clicker ' + (this.state.clickerClicked? 'active' : ' ')} onMouseUp={this.handleCircleMouseUp} onMouseDown={this.handleCircleClicked}>{this.props.testImage}</button> 
+          <button className={'clicker ' + (this.state.clickerClicked? 'active' : ' ')} onMouseUp={this.handleCircleMouseUp} onMouseDown={this.handleCircleClicked}>
+          </button> 
         </div>
 
         <div className="autoContainer">

@@ -1,13 +1,13 @@
 {
   "main.css": "/clicker/static/css/main.a37be80b.chunk.css",
-  "main.js": "/clicker/static/js/main.f985135e.chunk.js",
-  "main.js.map": "/clicker/static/js/main.f985135e.chunk.js.map",
+  "main.js": "/clicker/static/js/main.3a1c7448.chunk.js",
+  "main.js.map": "/clicker/static/js/main.3a1c7448.chunk.js.map",
   "static/js/1.1015926c.chunk.js": "/clicker/static/js/1.1015926c.chunk.js",
   "static/js/1.1015926c.chunk.js.map": "/clicker/static/js/1.1015926c.chunk.js.map",
   "runtime~main.js": "/clicker/static/js/runtime~main.68049872.js",
   "runtime~main.js.map": "/clicker/static/js/runtime~main.68049872.js.map",
   "static/css/main.a37be80b.chunk.css.map": "/clicker/static/css/main.a37be80b.chunk.css.map",
   "index.html": "/clicker/index.html",
-  "precache-manifest.216754d0f04cba4f90413d156062729d.js": "/clicker/precache-manifest.216754d0f04cba4f90413d156062729d.js",
+  "precache-manifest.e3f4cd9cb14c39383b9268c6e5c4e7aa.js": "/clicker/precache-manifest.e3f4cd9cb14c39383b9268c6e5c4e7aa.js",
   "service-worker.js": "/clicker/service-worker.js"
 }
