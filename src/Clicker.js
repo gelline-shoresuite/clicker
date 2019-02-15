@@ -24,6 +24,7 @@ class Clicker extends Component{
     };
 
   }
+  
 
 
   handleAutoAmount =() =>{
